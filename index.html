@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <section class="games">
+    <header>
+      <img src="./IMGS/wraper.png" class="w-100" alt="game photo">
+    </header>
+    <nav class="navbar navbar-expand-lg bg-nav container w-75 rounded-4">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">
+          <img src="IMGS/logo-sm.png" alt="">
+          GAME REVIEWS
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" id="mmorpg" aria-current="page" href="#">MMORPG</a>
+            <a class="nav-link" id="shooter" href="#">SHOOTER</a>
+            <a class="nav-link" id="sailing" href="#">SAILING</a>
+            <a class="nav-link" id="permadeath" href="#">PERMADEATH</a>
+            <a class="nav-link" id="superhero" href="#">SUPERHERO</a>
+            <a class="nav-link" id="pixel" href="#">PIXEL</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <main class="container my-5 home">
+      <section>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="cardsContainer">
+          <span class="loader"></span>
+        </div>
+      </section>
+    </main>
+  </section>
+
+  <section class="details d-none">
+    <div class="container">
+      <header class="d-flex justify-content-between text-white">
+        <h1 class="text-center h3 py-4">Details Game</h1>
+        <button class="btn-close btn-close-white my-4" id="btnClose"></button>
+      </header>
+      <div class="row g-4 text-white" id="detailsContent">
+        <span class="loader"></span>
+      </div>
+    </div>
+  </section>
+
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="JS/index.js"></script>
+</body>
+
+</html>
